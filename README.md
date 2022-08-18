@@ -3,4 +3,4 @@ Extremely useful linux one liners. Use [Explainshell](https://explainshell.com/)
 
 # Apache 10 top visitors
 Find the 10 most IP-addresses making requests to your apache webserver <br />
-`awk '{ print $1}' /var/log/httpd/access_log | sort | uniq -c | sort -n` <br />
+`awk '{ print $1}' /var/log/httpd/access_log | uniq -c | sort -n` <br />
